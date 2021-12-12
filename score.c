@@ -21,7 +21,6 @@ void input_data(struct info *st_p, int a){
 	}
 }
 void scholarship(struct info *st_p, int a){
-	struct info *st_p2;
 	for(int i=0;i<a;i++){
 		if(((st_p+i)->score>=4)&&((st_p+i)->credit>20))
 			printf("장학생 이름:%s\n평점 평균:%.1f\n취득 학점:%d\n",(st_p+i)->name,(st_p+i)->score,(st_p+i)->credit);
